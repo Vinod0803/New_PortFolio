@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vinod Kumar Deeli — Python Developer Portfolio">
+    <title>Vinod Kumar Deeli | Python Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#header" class="brand" aria-label="Vinod Kumar home">
+                    <img src="Logo.png" alt="Vinod Kumar logo" class="logo">
+                </a>
+
+                <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" onclick="openmenu()">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button class="menu-close" aria-label="Close navigation" onclick="closemenu()">×</button></li>
+                </ul>
+            </nav>
+
+            <div class="hero">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow"><span></span> PYTHON DEVELOPER</p>
+                    <h1>Building digital<br><span>experiences</span> that work.</h1>
+                    <p class="hero-description">
+                        Hi, I'm <strong>Vinod Kumar Deeli</strong> — a Computer Science engineer focused on Python,
+                        web technologies and secure, practical software solutions.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#portfolio" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+                    </div>
+                    <div class="hero-meta">
+                        <span><i class="fa-solid fa-location-dot"></i> Nellore, India</span>
+                        <span><i class="fa-solid fa-circle"></i> Open to opportunities</span>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="hero-glow"></div>
+                    <div class="portrait-frame">
+                        <img src="Vinnu.jpeg" alt="Vinod Kumar Deeli portrait">
+                    </div>
+                    <div class="floating-card card-one">
+                        <i class="fa-brands fa-python"></i>
+                        <div><strong>Python</strong><small>Developer</small></div>
+                    </div>
+                    <div class="floating-card card-two">
+                        <i class="fa-solid fa-code"></i>
+                        <div><strong>Web</strong><small>Development</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator"><span></span> Scroll to explore</div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow"><span></span> ABOUT ME</p>
+                    <h2>Turning ideas into <span>useful products.</span></h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-image reveal">
+                        <div class="image-card">
+                            <img src="image.jpg" alt="Vinod Kumar Deeli">
+                            <div class="image-caption"><strong>CS Engineer</strong><span>2020 — 2024</span></div>
+                        </div>
+                    </div>
+
+                    <div class="about-content reveal">
+                        <p class="lead">
+                            I'm Vinod Kumar Deeli, a Computer Science engineer skilled in Python, Java and modern web
+                            technologies. I enjoy creating clean interfaces, reliable applications and secure systems
+                            that solve real-world problems.
+                        </p>
+                        <div class="stats">
+                            <div><strong>Python</strong><span>Core strength</span></div>
+                            <div><strong>Web</strong><span>Frontend & UI</span></div>
+                            <div><strong>SQL</strong><span>Data & databases</span></div>
+                        </div>
+
+                        <div class="tabs" role="tablist">
+                            <button class="tab-links active-link" onclick="opentab('skills', this)">Skills</button>
+                            <button class="tab-links" onclick="opentab('experience', this)">Experience</button>
+                            <button class="tab-links" onclick="opentab('education', this)">Education</button>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <div class="detail-grid">
+                                <div><span>PROGRAMMING</span><p>Python, Java</p></div>
+                                <div><span>FRONTEND</span><p>HTML, CSS, JavaScript, React</p></div>
+                                <div><span>DATABASES</span><p>SQL, MySQL</p></div>
+                                <div><span>INTERESTS</span><p>Cybersecurity & secure systems</p></div>
+                            </div>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <div class="timeline">
+                                <div><span>2022</span><p><strong>Python Internship</strong><br>IIT Kanpur</p></div>
+                                <div><span>2023</span><p><strong>Salesforce Certificate</strong><br>Salesforce Academy</p></div>
+                                <div><span>2023</span><p><strong>AWS Certificate</strong><br>AWS Academy</p></div>
+                            </div>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <div class="timeline">
+                                <div><span>2020–2024</span><p><strong>B.Tech</strong><br>PACE Institute of Technology and Sciences, Ongole</p></div>
+                                <div><span>2018–2020</span><p><strong>Intermediate</strong><br>Dr. BSR Junior College, Atmakur</p></div>
+                                <div><span>2017–2018</span><p><strong>SSC</strong><br>ZPP High School, Karatampadu</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section section-dark">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow"><span></span> WHAT I DO</p>
+                    <h2>Skills built for <span>real projects.</span></h2>
+                </div>
+
+                <div class="services-list">
+                    <article class="service-card reveal">
+                        <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <span class="service-number">01</span>
+                        <h3>Web Development</h3>
+                        <p>Responsive, accessible and polished web experiences using HTML, CSS, JavaScript and React.</p>
+                        <div class="tech-list"><span>HTML</span><span>CSS</span><span>JS</span><span>React</span></div>
+                    </article>
+
+                    <article class="service-card featured reveal">
+                        <div class="service-icon"><i class="fa-brands fa-python"></i></div>
+                        <span class="service-number">02</span>
+                        <h3>Python Development</h3>
+                        <p>Practical Python applications with clean logic, database integration and an eye for security.</p>
+                        <div class="tech-list"><span>Python</span><span>SQL</span><span>MySQL</span></div>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                        <span class="service-number">03</span>
+                        <h3>Web Design</h3>
+                        <p>Modern interfaces with thoughtful spacing, strong visual hierarchy and mobile-first layouts.</p>
+                        <div class="tech-list"><span>UI</span><span>UX</span><span>Responsive</span></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="container">
+                <div class="section-heading heading-row reveal">
+                    <div>
+                        <p class="eyebrow"><span></span> SELECTED WORK</p>
+                        <h2>Projects that show <span>what I can build.</span></h2>
+                    </div>
+                    <a href="#contact" class="text-link">Have a project? <span>Let's talk →</span></a>
+                </div>
+
+                <div class="work-list">
+                    <article class="work reveal">
+                        <img src="work-1.png" alt="Social Media App project">
+                        <div class="work-overlay">
+                            <div><span class="project-tag">01 / APP</span><h3>Social Media App</h3><p>Connect, discover and interact with people around the world.</p></div>
+                            <a href="#contact" aria-label="Ask about Social Media App"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </article>
+                    <article class="work reveal">
+                        <img src="work-2.png" alt="Music App project">
+                        <div class="work-overlay">
+                            <div><span class="project-tag">02 / APP</span><h3>Music App</h3><p>A clean concept for discovering and enjoying music.</p></div>
+                            <a href="#contact" aria-label="Ask about Music App"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </article>
+                    <article class="work reveal">
+                        <img src="work-3.png" alt="Online Shopping App project">
+                        <div class="work-overlay">
+                            <div><span class="project-tag">03 / E-COMMERCE</span><h3>Online Shopping App</h3><p>A focused shopping experience with a simple product-first interface.</p></div>
+                            <a href="#contact" aria-label="Ask about Online Shopping App"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="contact-box reveal">
+                    <div class="contact-left">
+                        <p class="eyebrow"><span></span> GET IN TOUCH</p>
+                        <h2>Let's build something <span>great.</span></h2>
+                        <p class="contact-intro">Have an opportunity, project idea or just want to say hello? My inbox is open.</p>
+
+                        <div class="contact-details">
+                            <a href="mailto:vinodchowdary449@gmail.com"><i class="fa-solid fa-envelope"></i><span>vinodchowdary449@gmail.com</span></a>
+                            <a href="tel:+917995806492"><i class="fa-solid fa-phone"></i><span>+91 79958 06492</span></a>
+                        </div>
+
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/vinod-kumar-deeli-24r38" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/vinodchowdary__03" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/vinodchowdary.deeli" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://x.com/VinodCh39173271?s=09" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+
+                        <a href="Vinod.pdf" download class="btn btn-primary cv-btn">Download CV <i class="fa-solid fa-download"></i></a>
+                    </div>
+
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <label><span>Your name</span><input type="text" name="Name" placeholder="Enter your name" required></label>
+                            <label><span>Email address</span><input type="email" name="Email" placeholder="you@example.com" required></label>
+                            <label><span>Message</span><textarea name="Message" rows="5" placeholder="Tell me a little about your project..."></textarea></label>
+                            <button type="submit" class="btn btn-primary submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                            <span id="msg"></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="copyright">
+        <div class="container">
+            <p>© 2026 Vinod Kumar Deeli. Crafted with <span>♥</span> and code.</p>
+            <a href="#header">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <script>
+        const sidemenu = document.getElementById("sidemenu");
+        const menuToggle = document.querySelector(".menu-toggle");
+
+        function openmenu() {
+            sidemenu.classList.add("open");
+            menuToggle.setAttribute("aria-expanded", "true");
+            document.body.classList.add("menu-open");
+        }
+        function closemenu() {
+            sidemenu.classList.remove("open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            document.body.classList.remove("menu-open");
+        }
+
+        document.querySelectorAll("#sidemenu a").forEach(link => link.addEventListener("click", closemenu));
+
+        function opentab(tabname, button) {
+            document.querySelectorAll(".tab-links").forEach(tab => tab.classList.remove("active-link"));
+            document.querySelectorAll(".tab-contents").forEach(content => content.classList.remove("active-tab"));
+            button.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwmNjtMuavfOFxizSNcR3zQJQ1-haEtEwG7JuxWqCfdOAW4lBipSuVeFr20fa7VekpL-A/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            const button = form.querySelector("button");
+            const oldText = button.innerHTML;
+            button.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+            button.disabled = true;
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(() => {
+                    msg.textContent = "Message sent successfully ✓";
+                    form.reset();
+                })
+                .catch(() => {
+                    msg.textContent = "Something went wrong. Please try again.";
+                })
+                .finally(() => {
+                    button.innerHTML = oldText;
+                    button.disabled = false;
+                    setTimeout(() => msg.textContent = "", 5000);
+                });
+        });
+    </script>
+</body>
+</html>
